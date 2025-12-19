@@ -13,6 +13,7 @@ This repository contains an end-to-end forecasting project that predicts the nex
 This notebook extracts and assembles the dataset. It scrapes monthly player history from SteamCharts, pulls Steam News posts and aggregates a monthly update-intensity signal via keyword matching, fetches Google Trends monthly interest scores, merges all sources into a continuous monthly panel per game, creates forecasting features including calendar seasonality and shifted rolling summaries, runs basic consistency checks, and exports the final processed dataset used by the modeling notebook.
 
 * Final_Project_Analysis.ipynb
+
 This notebook loads the processed dataset exported by the EDA notebook and performs the forecasting workflow. It creates supervised training windows with a 12-month forecast horizon, performs time-based train, validation, and test splits, evaluates simple baseline forecasts, trains a small PyTorch MLP with early stopping, computes evaluation metrics, produces precision tables, and plots forecasted versus actual values for example games. It also saves the trained model and preprocessing statistics as reusable artifacts.
 
 data/
