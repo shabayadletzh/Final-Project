@@ -1,5 +1,3 @@
-# Project Title:
-
 # Forecasting Monthly Player Activity for Live Service Games
 
 ## Adilet Shabay
